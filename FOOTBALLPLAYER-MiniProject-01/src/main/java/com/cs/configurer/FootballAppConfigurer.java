@@ -9,6 +9,11 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 @Component
 public class FootballAppConfigurer implements WebMvcConfigurer {
 	
+	
+	public FootballAppConfigurer() {
+		System.out.println("Hue Hue Zero Param Constructor");
+	}
+	
 	@Autowired
 	private LocaleChangeInterceptor localeInterceptors;
 	
